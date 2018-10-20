@@ -1,0 +1,76 @@
+#developers:before {
+  content: ""; }
+
+.developers-section {
+  background-color: #fff; }
+  .developers-section .developers:first-child {
+    margin-right: 3rem; }
+  .developers-section .developers .one-third:not(:first-child) {
+    margin-left: 3rem; }
+
+.dev-header {
+  background: rgba(45, 45, 45, 0.9);
+  padding: 20px 20px;
+  border-radius: 0.4rem 0.4rem 0 0; }
+  .dev-header img {
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 2rem;
+    vertical-align: middle; }
+  .dev-header .dev-title {
+    display: inline-block;
+    vertical-align: middle; }
+    .dev-header .dev-title h3 {
+      font-weight: 400;
+      font-size: 2.2rem;
+      color: #fff;
+      margin: 0; }
+    .dev-header .dev-title .card-subtitle {
+      font-size: 1.7rem;
+      color: #bf3044;
+      font-weight: 400;
+      font-size: 1.7rem; }
+
+.dev-body {
+  background-color: #f4f4f4;
+  border-radius: 0 0 0.4rem 0.4rem; }
+  .dev-body .exp-title {
+    padding: 3.2rem 3rem 1rem;
+    color: #9e9e9e;
+    font-size: 1.5rem; }
+  .dev-body ul {
+    padding-left: 3rem;
+    padding-bottom: 1rem; }
+    .dev-body ul li:before {
+      display: none; }
+    .dev-body ul .lang {
+      display: inline-block; }
+    .dev-body ul .exp {
+      float: right !important;
+      display: inline-block;
+      padding-right: 3rem; }
+  .dev-body .contact-button {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-bottom: 3rem; }
+    .dev-body .contact-button a {
+      width: 100%;
+      cursor: pointer;
+      padding: 1rem;
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      text-align: center;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      border-radius: 0.5rem; }
+  .dev-body .available-button a {
+    background-color: #d13244; }
+    .dev-body .available-button a:hover {
+      background-color: #c52335; }
+  .dev-body .unavailable-button a {
+    background-color: #bfbfbf; }
+
+@media only screen and (max-width: 720px) {
+  .developers .one-third {
+    margin: 0; } }

@@ -1,0 +1,89 @@
+@import 'colors'
+@import 'vars'
+
+#developers
+ &:before
+   content: ""
+.developers-section
+ background-color: $dev_section_color   
+ .developers
+  &:first-child
+   margin-right: 3rem
+  .one-third:not(:first-child)
+   margin-left: 3rem 
+.dev-header
+  background: $developers_header_color
+  padding: 20px 20px
+  border-radius: 0.4rem 0.4rem 0 0  
+  img
+   border-radius: 50%
+   display: inline-block
+   margin-right: 2rem
+   vertical-align: middle
+  .dev-title
+   display: inline-block   
+   vertical-align: middle
+   h3
+    font-weight: 400
+    font-size: $dev_title_size
+    color: $title_color
+    margin: 0
+   .card-subtitle
+    font-size: $dev_subtitle_size
+    color: $subtitle_color
+    font-weight: 400
+    font-size: $dev_subtitle_size
+
+.dev-body
+ background-color: $dev_body_color
+ border-radius: 0 0 0.4rem 0.4rem
+ .exp-title
+  padding: 3.2rem 3rem 1rem
+  color: $dev_exptitle_color
+  font-size: 1.5rem
+ ul
+  padding-left: 3rem
+  padding-bottom: 1rem
+  li
+   &:before
+    display: none
+  .lang   
+   display: inline-block
+  .exp
+   float: right!important
+   display: inline-block 
+   padding-right: 3rem
+ .contact-button  
+  margin-left: 3rem
+  margin-right: 3rem 
+  padding-bottom: 3rem
+  a
+   width: 100%   
+   cursor: pointer
+   padding: 1rem
+   display: block
+   text-decoration: none
+   color: $title_color
+   text-align: center
+   font-size: 1.8rem
+   text-transform: uppercase
+   border-radius: 0.5rem
+ .available-button
+   a
+    background-color: $dev_availablebtn_color
+    &:hover
+     background-color: $dev_available_hover_btn_color
+ .unavailable-button
+  a
+    background-color: $dev_unavailablebtn_color
+
+ 
+@media only screen and (max-width: 720px)
+ .developers
+  .one-third
+   margin: 0
+  
+
+
+
+        
