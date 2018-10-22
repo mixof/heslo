@@ -15,7 +15,7 @@
     <meta name="description" content="Hire Developers Remotely - 50+ On-demand developers: Veeva presentations, Mobile Apps, Web Apps: PHP, MySQL, ASP.NET, Java, Javascript, Node.js, Angular, React,  iOS, Android">
     <meta name="viewport" content="width=device-width,initial-scale=1">    
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">    
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -80,6 +80,7 @@
       <ul>
         <li class="hamburger"><span>menu</span></li>
         <li><a href="#skills">skills</a></li>
+        <li><a href="#developers">developers</a></li>
         <li><a href="#contact">contact</a></li>        
       </ul>
     </div>
@@ -177,11 +178,13 @@
         <div class="one-third xs-full">
           <div class="dev-header">
             <div class="bg-image"></div>
+            <div class="dev-header-content">
             <img src="images/vojtech-zahorsky.jpg" height="80px">
             <div class="dev-title">
              <h3>Richard Novak</h3>
              <span class="card-subtitle">Full-stack JS developer</span>
             </div>
+          </div>
           </div>
           <div class="dev-body">
           <div class="exp-title">Experience:</div>
@@ -197,10 +200,13 @@
 
           <div class="one-third xs-full">
           <div class="dev-header">
+            <div class="bg-image"></div>
+            <div class="dev-header-content">
             <img src="images/martin-zupka.jpg" height="80px">
             <div class="dev-title">
              <h3>Jan Novotny</h3>
              <span class="card-subtitle">Java developer</span>
+            </div>
             </div>
           </div>
           <div class="dev-body">
@@ -217,10 +223,13 @@
 
           <div class="one-third xs-full">
           <div class="dev-header">
+            <div class="bg-image"></div>
+            <div class="dev-header-content">
             <img src="images/vojtech-zahorsky.jpg" height="80px">
             <div class="dev-title">
              <h3>Tomas Kral</h3>
              <span class="card-subtitle">Full-stack web developer</span>
+            </div>
             </div>
           </div>
           <div class="dev-body">
@@ -279,15 +288,35 @@
   </footer>
 
 
+<div class="popup">
+  <span class="closepop">x</span>
+  <h2>Hire Developer</h2>
+  <form>
+     <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+   
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
 
-  
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+    <div class="sbm">
+      <input type="submit" value="Contact">
+    </div> 
+
+  </form>  
+</div>
 </div>
 
 
     
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcQxF5DYPEVlzFZKIMkKOuJh3Njx7fZtc"></script>
 
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/jquery-3.3.1.min.js"></script>
+    <script src="./scripts/main.js"></script>    
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

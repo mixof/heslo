@@ -11,7 +11,25 @@
 .dev-header {
   background: rgba(45, 45, 45, 0.9);
   padding: 20px 20px;
-  border-radius: 0.4rem 0.4rem 0 0; }
+  border-radius: 0.4rem 0.4rem 0 0;
+  position: relative; }
+  .dev-header .bg-image {
+    background: url(../images/banner.jpg);
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85); }
+  .dev-header .dev-header-content {
+    position: relative;
+    z-index: 2; }
   .dev-header img {
     border-radius: 50%;
     display: inline-block;
@@ -71,6 +89,69 @@
   .dev-body .unavailable-button a {
     background-color: #bfbfbf; }
 
-@media only screen and (max-width: 720px) {
+.popup {
+  background: rgba(100, 100, 100, 0.6);
+  position: fixed;
+  display: none;
+  z-index: 5000;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0; }
+  .popup .closepop {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2.5rem !important;
+    cursor: pointer; }
+  .popup form {
+    text-align: left; }
+    .popup form textarea {
+      height: 100px; }
+  .popup input[type=text], .popup select, .popup textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; }
+  .popup .sbm {
+    text-align: center; }
+  .popup input[type=submit] {
+    background-color: #d13244;
+    color: white;
+    padding: 12px 50px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto; }
+    .popup input[type=submit]:hover {
+      background-color: #c52335; }
+  .popup > div {
+    border-radius: 10px;
+    position: fixed;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+    padding: 30px 15px;
+    width: 70%;
+    max-width: 600px;
+    z-index: 5001;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    border: 2px solid #505050; }
+
+@media (max-width: 768px) {
   .developers .one-third {
-    margin: 0; } }
+    margin: 1rem 3rem;
+    width: auto;
+    display: block; } }
