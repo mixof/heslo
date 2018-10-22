@@ -1,5 +1,7 @@
 @import 'colors'
 @import 'vars'
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
 
 #developers
  &:before
@@ -155,15 +157,251 @@
     text-align: center
     border: 2px solid #505050
 
+#cv-block
+  .row
+   margin-left: 0
+   margin-right: 0
+   display: flex
+  #sideblock
+    background-color: $profile_bg_color    
+  .sideblock-bg
+    background: url(../images/banner.jpg)    
+    position: absolute
+    z-index: 1
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    -webkit-filter: blur(18px)
+    filter: blur(18px)
+    transform: scale(0.9)    
+  .sideblock-body    
+    position: relative
+    z-index: 2
+    width: 100%
+    height: 100%
+    margin: 2rem
+    .logo
+      position: relative
+    .dev-photo
+      margin-top: 5rem
+      text-align: right
+      margin-right: 5rem
+      img
+        border-radius: 50%        
+  .cv-nav
+    list-style: none
+    text-align: right
+    margin: 3rem
+    li
+      &:first-child
+        padding-top: 8rem
+      color: #fff
+      font-size: 3rem     
+      padding-bottom: 35rem
 
+  #content-block    
+    .dev-name
+     font-size: 5rem
+     font-weight: 300
+     color: #000
+     margin-bottom: 1rem
+    .dev-subtitle
+      font-size: 2rem 
+      color: $subtitle_color 
+    #hire_btn
+      float: right!important
+    .controls-header
+      width: 100%
+      padding: 3rem
+      #hire_btn
+        a
+          text-decoration: none
+          padding: 1rem 3.3rem
+          background-color: $dev_availablebtn_color
+          color: #fff
+          font-size: 1.8rem
+          border-radius: 5px
+          font-weight: 500
+          text-transform: uppercase           
+          &:hover
+            background-color: $dev_available_hover_btn_color  
+    #social-block
+      .social-links
+        list-style: none
+        width: 100%
+        text-align: left
+        padding-inline-start: 0
+        margin-top: 4rem
+        li
+          padding: 3rem    
+          display: inline-block
+          width: 2rem
+          height: 2rem
+          background-color: $social_bg_color
+          border-radius: 50% 
+          margin-right: 2rem
+          cursor: pointer
+          &:hover
+            background-color: $dev_available_hover_btn_color
+          a
+           position: relative
+           text-align: center
+           i 
+
+              width: 32px
+              height: 32px
+              display: block
+              background-color: #fff
+              position: absolute
+              left: -1.5rem
+              top: -1.5rem
+              &.sendmail 
+                -webkit-mask-image: url('../images/envelope2.svg')
+                mask-image: url('../images/envelope2.svg') 
+              &.makecall 
+                -webkit-mask-image: url('../images/phone-call.svg')
+                mask-image: url('../images/phone-call.svg')
+              &.linkedin
+                -webkit-mask-image: url('../images/linkedin.svg')
+                mask-image: url('../images/linkedin.svg')
+                width: 30px
+                height: 30px
+                left: -1.35rem
+                top: -1.3rem  
+              &.foreign
+                -webkit-mask-image: url('../images/external-link.svg')
+                mask-image: url('../images/external-link.svg')
+                width: 24px
+                height: 24px
+                left: -1rem
+                top: -1.2rem               
+    .content-block-body 
+      #bio        
+        margin-top: 16rem  
+        font-weight: normal
+        font-size: 1.9rem
+      .skills-list
+        list-style: none
+        padding-inline-start: 0
+        li
+          padding: 1rem 0
+          .skill-col
+            padding-left: 0
+          .skill-name
+            float: left!important
+          .skill-data
+            width: auto
+            display: inline-block
+      #experience,#education, #certificates
+        .work-title
+          font-weight: normal
+        .work-desc
+          margin-top: 1rem
+      #projects
+        margin-top: 3rem
+        .project
+          .row
+            padding: 1rem 0
+          .project-field
+            padding-left: 0 
+            color: $project_field_color
+            font-weight: normal
+          .tags
+            padding: 3rem 0
+            .tag
+              padding: 0.4rem 1rem
+              background-color: $dev_available_hover_btn_color
+              color: #fff 
+              border-radius: 10px
+              font-size: 1.5rem
+              cursor: pointer
+      #other        
+        margin-bottom: 12rem
+        .row
+          padding: 2rem 0
+          border-bottom: 1px solid $project_field_color
+        .other-name
+          padding-left: 0
+          color: $project_field_color
+          font-weight: normal
+        .other-data
+          text-align: right
+          padding-right: 3rem
+#bio, #skills, #experience, #projects,#education, #certificates, #other
+  margin-top: 15rem
+
+
+              
+.progressbar
+  display: inline-block  
+  background-color: $progbar_bg_color
+  width: 100%
+  border-radius: 10px
+  .progress    
+    background-color: $progress_color
+    display: block    
+    top: 0
+    padding: 0.5rem
+    border-radius: 10px                   
  
+.back-arrow
+  background-image: url('../images/Forma.svg')
+  width: 20px
+  height: 22px
+  display: block
+  fill: #000
+#back
+  float: left!important
+  cursor: pointer 
+
+@media (min-width: 768px)
+  .block-title
+        position: absolute
+        text-align: right
+        left: -20rem        
+        font-size: 3rem
+        color: #fff
+        z-index: 2
+
+
 @media (max-width: 768px)
   .developers
     .one-third      
       margin: 1rem 3rem
       width: auto
       display: block
- 
+  .block-title
+    position: relative
+    color: #000
+    font-size: x-large 
+
+@media (max-width: 1070px)
+  .dev-photo
+    img
+      width: 150px
+
+
+@media (max-width: 1200px)
+  .dev-photo
+    img
+      width: 180px      
+
+@media (max-width: 900px)
+  .content-block-body
+      margin: 3rem
+      padding-right: 0
+  .dev-photo
+    img
+      width: 150px   
+
+@media (min-width: 1071px)
+  .dev-photo
+    img
+      width: 227px
+  .content-block-body
+      margin: 3rem
+      padding-right: 20rem      
   
 
 
